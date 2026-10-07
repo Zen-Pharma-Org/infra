@@ -80,7 +80,7 @@ module "iam" {
 
   aws_account_id = "891498120856"
 
-  github_org = "Zen-Pharma-Org"
+  github_org = var.github_org
 }
 module "ecr" {
   source = "../../modules/ecr"
